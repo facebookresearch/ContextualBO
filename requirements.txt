@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+ax-platform
+
+# For comparisons
+git+https://github.com/uber-research/TuRBO
+cma == 2.7.0
+dragonfly-opt == 0.1.4
