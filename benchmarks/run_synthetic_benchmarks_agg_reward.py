@@ -127,7 +127,7 @@ def run_aggregated_reward_benchmark(
         )
 
     res = json.dumps(object_to_json(axc.experiment))
-    with open(f'results/aggregated_reward_{benchmark_problem_name}_{strategy}_rep_{irep}.json', "w") as fout:
+    with open(f'results/aggregated_reward_{benchmark_problem_name}_{strategy_name}_rep_{irep}.json', "w") as fout:
        json.dump(res, fout)
     return res
 
@@ -163,20 +163,20 @@ if __name__ == '__main__':
     # Run all of the benchmark replicates.
 
     # Hartmann5DEmbedding, Uniform Weights, SAC
-    # run_aggregated_reward_benchmark_reps(
-    #     benchmark_problem_name="Hartmann5DEmbedding",
-    #     strategy="CBO",
-    #     num_contexts=5,
-    #     reps=10
-    # )
+    run_aggregated_reward_benchmark_reps(
+        benchmark_problem_name="Hartmann5DEmbedding",
+        strategy="SAC",
+        num_contexts=5,
+        reps=10
+    )
 
     # # Hartmann5DEmbedding, Uniform Weights, LCE-A
-    # run_aggregated_reward_benchmark_reps(
-    #     benchmark_problem_name="Hartmann5DEmbedding",
-    #     strategy="CBO_Emb_MAP",
-    #     num_contexts=5,
-    #     reps=10
-    # )
+    run_aggregated_reward_benchmark_reps(
+        benchmark_problem_name="Hartmann5DEmbedding",
+        strategy="LCE-A",
+        num_contexts=5,
+        reps=10
+    )
 
     # Hartmann5DEmbedding, Uniform Weights, SOBOL
     run_aggregated_reward_benchmark_reps(
@@ -199,7 +199,7 @@ if __name__ == '__main__':
     # Hartmann5DEmbedding, Skewed Weights, num of contexts = 10, num of dense contexts = 2
     # run_aggregated_reward_benchmark_reps(
     #     benchmark_problem_name="Hartmann5DEmbedding",
-    #     strategy="CBO",
+    #     strategy="SAC",
     #     num_contexts=10,
     #     reps=10,
     #     benchmark_problem_args = {"context_weights": [0.46, 0.46, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]}

@@ -1,5 +1,5 @@
 # ContextualBO
-Code associated with paper "High-Dimensional Contextual Policy Search with Unknown Context Rewards using Bayesian Optimization"
+Code associated with paper ["High-Dimensional Contextual Policy Search with Unknown Context Rewards using Bayesian Optimization"](https://ai.facebook.com/research/publications/high-dimensional-contextual-policy-search-with-unknown-context-rewards-using-bayesian-optimization)
 
 ## Installation
 To install the code clone the repo and install the dependencies as

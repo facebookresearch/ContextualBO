@@ -144,20 +144,20 @@ if __name__ == '__main__':
     # Run all of the benchmark replicates.
 
     # Hartmann5DEmbedding, Uniform Weights, LCE-M
-    # run_multioutput_reward_benchmark_reps(
-    #     benchmark_problem_name="Hartmann5DEmbedding",
-    #     strategy="LCE-M",
-    #     num_contexts=5,
-    #     reps=8
-    # )
+    run_multioutput_reward_benchmark_reps(
+        benchmark_problem_name="Hartmann5DEmbedding",
+        strategy="LCE-M",
+        num_contexts=5,
+        reps=8
+    )
 
     # Hartmann5DEmbedding, Uniform Weights, ICM
-    # run_multioutput_reward_benchmark_reps(
-    #     benchmark_problem_name="Hartmann5DEmbedding",
-    #     strategy="ICM",
-    #     num_contexts=5,
-    #     reps=8
-    # )
+    run_multioutput_reward_benchmark_reps(
+        benchmark_problem_name="Hartmann5DEmbedding",
+        strategy="ICM",
+        num_contexts=5,
+        reps=8
+    )
 
     # Hartmann5DEmbedding, Uniform Weights, SOBOL
     run_multioutput_reward_benchmark_reps(

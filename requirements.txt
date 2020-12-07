@@ -1,7 +1,8 @@
 numpy
 matplotlib
 scipy
-ax-platform
+git+https://github.com/facebook/Ax.git 
+git+https://github.com/pytorch/botorch.git
 
 # For comparisons
 git+https://github.com/uber-research/TuRBO

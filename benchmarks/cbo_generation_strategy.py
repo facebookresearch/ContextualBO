@@ -13,9 +13,9 @@ from ax.core.generator_run import GeneratorRun
 from ax.core.observation import ObservationFeatures
 from ax.core.parameter import ChoiceParameter
 from ax.core.search_space import SearchSpace
-#from ax.models.torch.cbo_lcea import LCEABO
-#from ax.models.torch.cbo_sac import SACBO
-#from ax.models.torch.cbo_lcem import LCEMBO
+from ax.models.torch.cbo_lcea import LCEABO
+from ax.models.torch.cbo_sac import SACBO
+from ax.models.torch.cbo_lcem import LCEMBO
 from ax.modelbridge.factory import DEFAULT_TORCH_DEVICE
 from ax.modelbridge.generation_strategy import GenerationStep, GenerationStrategy
 from ax.modelbridge.random import RandomModelBridge

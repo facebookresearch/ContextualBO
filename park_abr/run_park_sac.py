@@ -8,7 +8,7 @@ import json
 
 import numpy as np
 from ax.modelbridge.generation_strategy import GenerationStep, GenerationStrategy
-from ax.modelbridge.strategies.rembo import REMBOStrategy
+from ax.modelbridge.factory import get_sobol
 from ax.storage.json_store.encoder import object_to_json
 from ax.service.ax_client import AxClient
 from cbo_generation_strategy import get_ContextualBO
@@ -49,7 +49,7 @@ for rep in range(25):
     gs = GenerationStrategy(
         name="SAC",
         steps=[
-            GenerationStep(get_sobol, init_size),
+            GenerationStep(get_sobol, 8),
             GenerationStep(
                 get_ContextualBO,
                 -1,
